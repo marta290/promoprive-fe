@@ -9,6 +9,7 @@ import type {
 import { useQuery } from "@tanstack/react-query";
 import axios from "../../interceptor";
 import type { IFiltersResponse } from "../../types/Filter.Interface";
+import { ICON_PATH } from "@src/constants/constants";
 
 const GiftCardPage = () => {
   // Stati
@@ -37,7 +38,6 @@ const GiftCardPage = () => {
 
   const context = useContext(ConfigContext);
   const bannerData = context?.configuration?.giftCardBanner?.[0];
-  const ICON_PATH = "src/assets/icons.svg";
 
   // Recupera tutte le giftCard appena si atterra nella pagina la prima volta
   const { data: initialData, isLoading: isLoadingInitial } = useQuery({

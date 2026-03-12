@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ConfigContext } from "../../../contexts/ConfigContext"; 
-import Subfooter from "../../UI/footer/Subfooter";
-import iconsSprite from "../../../assets/icons.svg";
+import { ConfigContext } from "@src/contexts/ConfigContext"; 
+import Subfooter from "@src/Components/UI/footer/Subfooter";
+import iconsSprite from "@src/assets/icons.svg";
 
 const Footer = () => {
   const context = useContext(ConfigContext);

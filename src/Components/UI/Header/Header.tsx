@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { routes } from "../../../router";
 import { ConfigContext } from "../../../contexts/ConfigContext";
+import { ICON_PATH } from "@src/constants/constants";
 
 // Definiamo un tipo per le sezioni del menu mobile
 type SectionKey = "promo" | "area";
@@ -33,7 +34,6 @@ const Header = () => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
 
-  const ICON_PATH = "/src/assets/icons.svg";
 
   return (
     <header className="w-full bg-white border-b border-gray-100 relative font-ubuntu z-[100]">

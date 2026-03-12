@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import CardCarousel from "../UI/Card/CardCarousel";
 import { type ICardCarouselProps } from "../../types/CardCarousel.Interface";
+import { ICON_PATH } from "@src/constants/constants";
 
 
 interface IGenericCarouselProps {
@@ -19,7 +20,6 @@ const Carousel = ({data,sectionId,title,description,}: IGenericCarouselProps) =>
   const showNavigation = data.length > 3;
   const prevClass = `${sectionId}-prev`;
   const nextClass = `${sectionId}-next`;
-  const ICON_PATH = "src/assets/icons.svg";
 
   return (
     <div className="relative w-full">

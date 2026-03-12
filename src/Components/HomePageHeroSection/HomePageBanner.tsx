@@ -6,6 +6,7 @@ import { ConfigContext } from "../../contexts/ConfigContext";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { ICON_PATH } from "@src/constants/constants";
 
 const HomePageBanner = () => {
   const context = useContext(ConfigContext);
@@ -16,7 +17,6 @@ const HomePageBanner = () => {
   const banners = context.configuration.homepage.banner;
   const isCashbackEnabled = context?.sections?.cashback ?? false;
   const hasMultipleBanners = banners.length > 1;
-  const ICON_PATH = "src/assets/icons.svg";
 
   const currentBanner = banners[activeIndex];
 

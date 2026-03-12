@@ -4,6 +4,7 @@ import GiftCard from "../../Components/UI/Card/GiftCard";
 import { ConfigContext } from "../../contexts/ConfigContext";
 import { GIFT_CARDS } from "../../constants/giftCard";
 import type { IGiftCard } from "../../types/GiftCard.Interface";
+import { ICON_PATH } from "@src/constants/constants";
 
 const GiftCardPage = () => {
   const [visibleCount, setVisibleCount] = useState(12);
@@ -25,7 +26,6 @@ const GiftCardPage = () => {
 
   const context = useContext(ConfigContext);
   const bannerData = context?.configuration?.giftCardBanner?.[0];
-  const ICON_PATH = "src/assets/icons.svg";
   const initialData = { results: GIFT_CARDS };
   const filteredData = { results: GIFT_CARDS };
   const isLoadingInitial = false;
