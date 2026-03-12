@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { routes } from "../../../router";
 import { ConfigContext } from "../../../contexts/ConfigContext";
-import { ICON_PATH } from "@src/constants/constants";
+import iconsSprite from "@src/assets/icons.svg";
 
 // Definiamo un tipo per le sezioni del menu mobile
 type SectionKey = "promo" | "area";
@@ -44,7 +44,7 @@ const Header = () => {
             onClick={() => setIsMenuOpen(true)}
           >
             <svg width="24" height="24">
-              <use href={`${ICON_PATH}#icon-menu`} />
+              <use href={`${iconsSprite}#icon-menu`} />
             </svg>
           </div>
           {/* Logo in versione Desktop/Mobile gestito con picture e source */}
@@ -64,14 +64,14 @@ const Header = () => {
           {isCashbackEnabled && (
             <div className="flex items-center cursor-pointer gap-[8px] bg-[#F5F5F5] rounded-full px-[12px] py-[6px] mr-[12px] md:bg-transparent md:rounded-none md:p-0 md:mr-[32px] hover:opacity-80 transition-opacity">
               <svg width="24" height="24">
-                <use href={`${ICON_PATH}#icon-wallet`} />
+                <use href={`${iconsSprite}#icon-wallet`} />
               </svg>
               <span className="text-[14px] font-medium hidden md:block">
                 0,00€
               </span>
 
               <svg width="16" height="16" className=" md:block">
-                <use href={`${ICON_PATH}#icon-chevron`} />
+                <use href={`${iconsSprite}#icon-chevron`} />
               </svg>
             </div>
           )}
@@ -79,15 +79,15 @@ const Header = () => {
           <div className="flex items-center gap-[16px] md:gap-[24px]">
             <div className="cursor-pointer hover:opacity-70 transition-opacity">
               <svg width="20" height="20">
-                <use href={`${ICON_PATH}#icon-cart`} />
+                <use href={`${iconsSprite}#icon-cart`} />
               </svg>
             </div>
             <div className="hidden md:flex items-center gap-1 cursor-pointer hover:opacity-70 transition-opacity">
               <svg width="24" height="24">
-                <use href={`${ICON_PATH}#icon-user-circle`} />
+                <use href={`${iconsSprite}#icon-user-circle`} />
               </svg>
               <svg width="16" height="16">
-                <use href={`${ICON_PATH}#icon-chevron`} />
+                <use href={`${iconsSprite}#icon-chevron`} />
               </svg>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Header = () => {
             className="text-gray-400 hover:text-black transition-colors"
           >
             <svg width="24" height="24">
-              <use href={`${ICON_PATH}#icon-close`} />
+              <use href={`${iconsSprite}#icon-close`} />
             </svg>
           </button>
         </div>
@@ -127,7 +127,7 @@ const Header = () => {
                 width="12"
                 height="12"
               >
-                <use href={`${ICON_PATH}#icon-chevron`} />
+                <use href={`${iconsSprite}#icon-chevron`} />
               </svg>
             </div>
             {openSections.promo && (
@@ -181,7 +181,7 @@ const Header = () => {
                 width="12"
                 height="12"
               >
-                <use href={`${ICON_PATH}#icon-chevron`} />
+                <use href={`${iconsSprite}#icon-chevron`} />
               </svg>
             </div>
             {openSections.area && (
@@ -203,7 +203,7 @@ const Header = () => {
         <div className="p-4 border-t border-gray-100">
           <button className="w-full bg-[#32373D] text-white rounded-full py-[14px] px-6 flex items-center gap-3 hover:opacity-90 transition-opacity">
             <svg width="18" height="18">
-              <use href={`${ICON_PATH}#icon-logout`} />
+              <use href={`${iconsSprite}#icon-logout`} />
             </svg>
             <span className="font-semibold text-[16px]">Esci</span>
           </button>
