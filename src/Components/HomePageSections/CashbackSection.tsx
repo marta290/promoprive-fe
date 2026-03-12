@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Carousel from "./Carousel";
-import iconsSprite from "@/assets/icons.svg";
+import iconsSprite from "@src/assets/icons.svg";
 import { ConfigContext } from "@src/contexts/ConfigContext";
 import { type ICarouselItem } from "@src/types/Config.Interface"; 
 import { type ICardCarouselProps } from "@src/types/CardCarousel.Interface";
