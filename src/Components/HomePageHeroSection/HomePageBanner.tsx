@@ -6,7 +6,7 @@ import { ConfigContext } from "../../contexts/ConfigContext";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { ICON_PATH } from "@src/constants/constants";
+import iconsSprite from "@src/assets/icons.svg";
 
 const HomePageBanner = () => {
   const context = useContext(ConfigContext);
@@ -117,10 +117,10 @@ const HomePageBanner = () => {
         {hasMultipleBanners && (
           <div className="flex justify-center items-center w-full gap-6 pb-4 transform translate-y-15">
             <button className="custom-prev w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center">
-              <svg width="24" height="24"><use href={`${ICON_PATH}#nav-prev`} /></svg>
+              <svg width="24" height="24"><use href={`${iconsSprite}#nav-prev`} /></svg>
             </button>
             <button className="custom-next w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center">
-              <svg width="24" height="24"><use href={`${ICON_PATH}#nav-next`} /></svg>
+              <svg width="24" height="24"><use href={`${iconsSprite}#nav-next`} /></svg>
             </button>
           </div>
         )}
@@ -130,10 +130,10 @@ const HomePageBanner = () => {
       {hasMultipleBanners && (
         <div className="hidden md:block">
           <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[25px] z-50 w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-black bg-white border border-gray-100 cursor-pointer">
-            <svg width="24" height="24"><use href={`${ICON_PATH}#nav-prev`} /></svg>
+            <svg width="24" height="24"><use href={`${iconsSprite}#nav-prev`} /></svg>
           </button>
           <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-[25px] z-50 w-12 h-12 rounded-full shadow-xl flex items-center justify-center text-black bg-white border border-gray-100 cursor-pointer">
-            <svg width="24" height="24"><use href={`${ICON_PATH}#nav-next`} /></svg>
+            <svg width="24" height="24"><use href={`${iconsSprite}#nav-next`} /></svg>
           </button>
         </div>
       )}
