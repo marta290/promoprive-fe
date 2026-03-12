@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import CardCarousel from "../UI/Card/CardCarousel";
 import { type ICardCarouselProps } from "../../types/CardCarousel.Interface";
-import { ICON_PATH } from "@src/constants/constants";
+import iconsSprite from "@src/assets/icons.svg";
 
 
 interface IGenericCarouselProps {
@@ -39,14 +39,14 @@ const Carousel = ({data,sectionId,title,description,}: IGenericCarouselProps) =>
               className={`${prevClass} hidden lg:flex absolute left-[-110px] top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-white border border-gray-100 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-all cursor-pointer text-black`}
             >
               <svg width="24" height="24">
-                <use href={`${ICON_PATH}#nav-prev`} />
+                <use href={`${iconsSprite}#nav-prev`} />
               </svg>
             </button>
             <button
               className={`${nextClass} hidden lg:flex absolute right-[-110px] top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-white border border-gray-100 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-all cursor-pointer text-black`}
             >
               <svg width="24" height="24">
-                <use href={`${ICON_PATH}#nav-next`} />
+                <use href={`${iconsSprite}#nav-next`} />
               </svg>
             </button>
           </>
