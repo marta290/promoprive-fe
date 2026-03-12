@@ -1,8 +1,8 @@
-import { createContext, type ReactNode } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { createContext, type ReactNode } from "react";
 import { getAppConfigurationData } from "../services/ConfigService";
-import { type ITokenResponse, type IConfigContextType, type IConfiguration } from "../types/Config.Interface";
-import { TOKEN } from "../constants/token"; 
+import { type IConfigContextType, type ITokenResponse } from "../types/Config.Interface";
+// import { TOKEN } from "../constants/token"; 
 
 
 const ConfigContext = createContext<IConfigContextType | null>(null);
@@ -72,4 +72,4 @@ const ConfigProvider = ({ children }: { children: ReactNode }) => {
 
 
 
-export { ConfigContext, ConfigProvider }
+export { ConfigContext, ConfigProvider };
